@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+        /* font-family: "Jacquard 12 Charted", system-ui;
+        font-weight: 400;
+        font-style: normal; */
+        font-family: "Rubik Wet Paint", serif;
+      
+}
+body{
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+/* navigation-section */
+#navbar{
+    display: flex;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background: url('../bg\ images/pexels-ezz7-683404.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+    
+}
+#navbar #logo img{
+    height: 8rem;
+    margin-left: 10px;
+    box-shadow: purple 5px 5px 15px;
+    /* filter: invert(20%); */
+}
+#navbar #logo img:hover{
+   
+    box-shadow: rgb(194, 189, 194) 10px 10px 15px;
+   
+}
+#navbar .container ul{
+    display: flex;
+}
+#navbar .container ul li{
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+#navbar .container ul li a{
+    color: rgb(185, 47, 47);
+    
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 3px 6px;
+    font-size: 1.5rem;
+}
+#navbar .container ul li a:hover{
+    color: crimson;
+    background-color: purple;
+    border-radius: 9px;
+    text-shadow: white 2px 2px 5px;
+    box-shadow: purple 2px 2px 5px;
+}
+/* home-section */
+#home{
+    display: flex;
+    color: brown;
+    box-shadow: purple 10px 10px 20px;
+    border: 2px solid hotpink;
+    margin: 2px;
+    padding: 15px;
+    height: 500px;
+    flex-direction: column;
+}
+#home::before{
+    content: "";
+    background: url('../bg\ images/pexels-ahmedadly-1270184.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: .5;
+    height: 58%;
+    width: 100%;
+}
+#home h1, h3, p{
+    margin: 30px 10px;
+    box-shadow: hotpink 3px 3px 7px;
+}
+.btn{
+    background-color: transparent;
+    color: red;
+    text-shadow: purple 2px 2px 5px;
+    font-size: 2rem;
+    padding: 3px;
+    border: 2px solid darkblue;
+    box-shadow: darkblue 5px 5px 10px;
+    border-radius: 15px;
+    margin: 20px 300px;
+}
+.btn:hover{
+    background-color: black;
+    box-shadow: rgb(151, 26, 151) 5px 5px 10px;
+    color: purple;
+    text-shadow: teal 2px 2px 5px;
+
+}
+/* benefits-section */
+#benefits{
+    display: flex;
+    border: 3px solid hotpink;
+    box-shadow: purple 10px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    text-shadow: purple 2px 2px 5px;
+}
+#benefits::before{
+    content: "";
+    background: url('../bg\ images/pexels-resourceboy-29331139.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    z-index: -1;
+    opacity: .5;
+}
+#benefits h1{
+    text-shadow: purple 3px 3px 7px;
+}
+#benefits img{
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    border: 3px solid purple;
+    box-shadow: red 3px 3px 10px;
+    flex-wrap: wrap;
+}
+#benefits img:hover{
+   
+    box-shadow: rgb(194, 189, 194) 10px 10px 15px;
+   
+}
+/* utility-classes */
+.h-primary{
+    font-size: 3rem;
+}
+.center{
+    text-shadow: purple 1px 1px 6px;
+    text-align: center;
+    justify-content: center;
+}
